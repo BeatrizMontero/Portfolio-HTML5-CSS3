@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prueba práctica</title>
+
+  <!-- Hoja de estilos y hoja de reset. ¡Recordar enlazarlo bien! -->
+  <link rel="stylesheet" href=""/>
+  <link rel="stylesheet" href=""/>
+</head>
+
+<!-- Las partes importantes del enunciado están comentadas para asegurarnos de que lo cumplimos todo -->
+
+<body>
+  <header>
+    <!-- El header deberá tener una imagen de fondo, optimizada para distintas resoluciones (### OPCIONAL ###) -->
+    <img class="" src="" alt=""/>
+  </header>
+
+<main>
+  <!-- Todos los links tendrán que tener el estado hover suavizado con una transición. Estos links no son necesarios en la versión mobile como viene en los anexos. -->
+  <!-- ¿Qué son las transiciones? Enlace de interés > https://developer.mozilla.org/es/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions -->
+  <a class="enlace" href="">Datos personales</a>
+  <a class="enlace" href="">¿Cómo me conociste?</a>
+  <a class="enlace" href="">Descríbete</a>
+
+  <!-- Una sección con nuestras skills de programación y progreso de las mismas. Esta sección tiene que contar con BARRAS DE PROGRESO ANIMADAS con animaciones css -->
+  <!-- Nuestras skills aprendidas en KeepCoding son, por ejemplo:
+  Python 
+  Git
+  HTML
+  CSS
+  Javascript
+  Node.js
+  Vue
+  Typescript -->
+
+  <!-- Formulario con inputs: todos  tienen que tener tanto los TIPOS CORRECTOA como la VALIDACIÓN HTML de cada input. -->
+  <form class="" action="" method="post">
+    <!-- <fieldset> Los fieldset suelen usarse para separar nuestro formulario en secciones, pero pueden hacerse dos formularios o separarse con div, article, section... -->
+      <label for="">Nombre</label>
+      <input type="text"/>
+
+      <label for="">Apellidos</label>
+      <input type="text"/>
+
+      <label for="">Teléfono</label>
+      <input type="text"/>
+    </fieldset>
+
+    <fieldset>
+      <label for="">¿Cómo me conociste?</label> <!-- ### REQUERIDO ### -->
+      <input type="radio" name="" id=""/>Universidad
+      <input type="radio" name="" id=""/>Keepcoding kick-off
+      <input type="radio" name="" id=""/>Colegio
+      <input type="radio" name="" id=""/>En Github
+
+      <hr/> <!-- Sólo para visualizar en Live Server. Se recomienda separar estas secciones con css (o usar section, div, article...) -->
+
+      <label for="">Indica tu tag de GitHub</label>
+      <input type=""/> <!-- ¡OJO! Importante usar el input correcto y validarlo con una expresión regular que sólo permita introducir una @ y caracteres (p. ej. https://regex101.com/) -->
+    </fieldset>
+
+    <fieldset>
+      <label for="bio">¡Descríbete!</label> <!-- (MAX 180 CARACTERES) ### REQUERIDO ### -->
+      <textarea required id="bio"></textarea> <!-- Este textarea puede tener el tamaño que queramos -->
+    </fieldset>
+
+    <!-- Hay varias opciones para poner un botón, p. ej -->
+    <button>Guardar</button>
+    <input type="button" value="Guardar"/>
+  </form>
+</main>
+
+<footer>
+  <!-- Estos enlaces conforman un menú de navegación, así que va entre etiquetas nav -->
+  <nav>
+    <!-- Importante tener en cuenta que son links a un recurso externo y tenemos no queremos dejar información nuestra en esas webs. -->
+    <!-- Para esto se usa method="post" (nunga get) pero hay que comprobar si se puede usar dentro del nav o tiene que ser en los enlaces... -->
+    <a href="" target="_blank">LinkedIn</a>
+    <a href="" target="_blank">GitHub</a>
+    <a href="" target="_blank">Twitter</a>
+    <a href="" target="_blank">Facebook</a>
+    <a href="" target="_blank">Instagram</a>
+    <a href="" target="_blank">Tinder</a>
+    <!-- <a href="" target="_blank">RED SOCIAL QUE ME DÉ LA GANA</a> -->
+  </nav>
+</footer>
+</body>
+</html>
