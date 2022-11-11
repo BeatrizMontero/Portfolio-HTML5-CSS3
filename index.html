@@ -7,25 +7,58 @@
   <title>Prueba práctica</title>
 
   <!-- Hoja de estilos y hoja de reset. ¡Recordar enlazarlo bien! -->
-  <link rel="stylesheet" href=""/>
-  <link rel="stylesheet" href=""/>
+  <link rel="stylesheet" href="styles/reset.css"/>
+  <link rel="stylesheet" href="styles/main.css"/>
 </head>
 
 <!-- Las partes importantes del enunciado están comentadas para asegurarnos de que lo cumplimos todo -->
 
 <body>
   <header>
+    <div>
+      <div class="">
     <!-- El header deberá tener una imagen de fondo, optimizada para distintas resoluciones (### OPCIONAL ###) -->
-    <img class="" src="" alt=""/>
+       <img class="" src="imagenes/imagen2.jpg" alt="torbellino"/>
+      </div>
+
+      <!-- Todos los links tendrán que tener el estado hover suavizado con una transición. Estos links no son necesarios en la versión mobile como viene en los anexos. -->
+  <!-- ¿Qué son las transiciones? Enlace de interés > https://developer.mozilla.org/es/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions -->
+     
+      <nav class="">
+       <a href="" class="nav-link" id="nav-link-portfolio">Datos personales</a>
+       <a href="" class="nav-link" id="nav-link-portfolio">¿Cómo me conociste?</a>
+       <a href="" class="nav-link" id="nav-link-portfolio">¡Descríbete</a>
+      </nav>
+
+    </div>
+    
+    <div class="container">
+      <img class="" src="imagenes/imagen1.jpg" alt="portada"/>
+       <div class="texto-encima">Sigue el camino de balsodas amarillas.</div>
+      </div>
+    </div>
+  
   </header>
 
-<main>
-  <!-- Todos los links tendrán que tener el estado hover suavizado con una transición. Estos links no son necesarios en la versión mobile como viene en los anexos. -->
-  <!-- ¿Qué son las transiciones? Enlace de interés > https://developer.mozilla.org/es/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions -->
-  <a class="enlace" href="">Datos personales</a>
-  <a class="enlace" href="">¿Cómo me conociste?</a>
-  <a class="enlace" href="">Descríbete</a>
+  <main>
+    
+    <section id="aboutme" class="section">
+      <article>
+        <h1>Dorothy Gale</h1>
+        <p>Yo soñaba con viajar más allá del arcoiris, una noche vi mi deseo hecho realidad cuando un tornado no llevó a mi perrito(Toto) y a mi al mundo de Oz. Pero ahora tengo ganas de volver a Kansas.</p>
+        <p>Me dijeron que siguiera el camino de baldosas amarillas para llegar a la Ciudad Esmeralda, donde vive el todopoderoso Mago de Oz, el puede ayudarme a volver a casa.</p>
+        <p>Por el camino he hecho nuevos amigos. El Espantapájaros que desea un cerebro, el Hombre de Hojalata que quiere un corazón y el León Cobarde al que le hace falta el coraje.</p>
+        <p>Todos ellos van a pedi al Gran Mago de Oz que haga realidad sus deseos.</p>
+        <p>¿Tú tienes algún deseo? ¿Te apetece acompañarme en mi viaje de vuelta a casa?</p>
+        <h3>Spoiler</h3>
+        <p>Todo eso que deseas, en realidad, ya está dentro de ti, solo tienes que escucharte. </p>
+      </article>
+      <article>
+        <iframe id="" width="560" height="315" src="https://www.youtube.com/embed/zRoyGplher0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </article>  
+    </section>
 
+    <section></section>
   <!-- Una sección con nuestras skills de programación y progreso de las mismas. Esta sección tiene que contar con BARRAS DE PROGRESO ANIMADAS con animaciones css -->
   <!-- Nuestras skills aprendidas en KeepCoding son, por ejemplo:
   Python 
@@ -38,27 +71,50 @@
   Typescript -->
 
   <!-- Formulario con inputs: todos  tienen que tener tanto los TIPOS CORRECTOA como la VALIDACIÓN HTML de cada input. -->
-  <form class="" action="" method="post">
+   <form class="" action="registro-completado" method="post" novalidate>
     <!-- <fieldset> Los fieldset suelen usarse para separar nuestro formulario en secciones, pero pueden hacerse dos formularios o separarse con div, article, section... -->
-      <label for="">Nombre</label>
-      <input type="text"/>
+    <fieldset>
+     <legend id="perinf">Datos personales</legend>
+     <ul>
+      <li>
+       <label for="name">Nombre</label>
+       <input required id="name" name="name" type="text"/>
+      </li>
+     </ul>
 
-      <label for="">Apellidos</label>
-      <input type="text"/>
+     <ul>
+      <li>
+       <label for="surname">Apellidos</label>
+       <input required id="surname" name="surname" type="text"/>
+      </li>
+     </ul>
 
-      <label for="">Teléfono</label>
-      <input type="text"/>
+    <ul>
+      <li>
+       <label for="phone">Teléfono</label>
+       <input required id="phone" type="tel" name="phone" pattern="[0-9]"/>
+      </li>
+    </ul>
     </fieldset>
 
     <fieldset>
-      <label for="">¿Cómo me conociste?</label> <!-- ### REQUERIDO ### -->
-      <input type="radio" name="" id=""/>Universidad
-      <input type="radio" name="" id=""/>Keepcoding kick-off
-      <input type="radio" name="" id=""/>Colegio
-      <input type="radio" name="" id=""/>En Github
-
-      <hr/> <!-- Sólo para visualizar en Live Server. Se recomienda separar estas secciones con css (o usar section, div, article...) -->
-
+      <legend>¿Cómo me conociste?</legend> <!-- ### REQUERIDO ### -->
+      
+      <label for="unv">Universidad</label>
+      <input required id="unv" type="radio" name="meet" value="unv"/>
+      
+      <label for="kpc">KeepCoding kick-off</label>
+      <input  required id="kpc" type="radio" name="meet" value="kpc"/>
+      
+      <label for="colg">Colegio</label>
+      <input required id="colg" type="radio" name="meet" value="colg"/>
+      
+      <label for="gt"></label>En GitHub
+      <input required id="gt" type="radio" name="meet" value="gt"/>
+   
+    </fieldset>
+      <!-- antes tenia hr.Sólo para visualizar en Live Server. Se recomienda separar estas secciones con css (o usar section, div, article...) -->
+    <fieldset>
       <label for="">Indica tu tag de GitHub</label>
       <input type=""/> <!-- ¡OJO! Importante usar el input correcto y validarlo con una expresión regular que sólo permita introducir una @ y caracteres (p. ej. https://regex101.com/) -->
     </fieldset>
@@ -69,24 +125,30 @@
     </fieldset>
 
     <!-- Hay varias opciones para poner un botón, p. ej -->
-    <button>Guardar</button>
-    <input type="button" value="Guardar"/>
-  </form>
-</main>
+    
+    <input type="submit" value="Guardar"/>
+     <!--<button>Guardar</button>-->
+   </form>
+  </main>
 
-<footer>
-  <!-- Estos enlaces conforman un menú de navegación, así que va entre etiquetas nav -->
-  <nav>
+  <footer>
+   <!-- Estos enlaces conforman un menú de navegación, así que va entre etiquetas nav -->
+   <nav>
+    <div>
     <!-- Importante tener en cuenta que son links a un recurso externo y tenemos no queremos dejar información nuestra en esas webs. -->
     <!-- Para esto se usa method="post" (nunga get) pero hay que comprobar si se puede usar dentro del nav o tiene que ser en los enlaces... -->
-    <a href="" target="_blank">LinkedIn</a>
-    <a href="" target="_blank">GitHub</a>
-    <a href="" target="_blank">Twitter</a>
-    <a href="" target="_blank">Facebook</a>
-    <a href="" target="_blank">Instagram</a>
-    <a href="" target="_blank">Tinder</a>
+     <a href="" target="_blank">LinkedIn</a>
+     <a href="" target="_blank">GitHub</a>
+     <a href="" target="_blank">Twitter</a>
+     <a href="" target="_blank">Facebook</a>
+     <a href="" target="_blank">Instagram</a>
+     <a href="" target="_blank">Tinder</a>
+    </div>
+    <div>
+      <img src="imagenes/imagen3.jpg" alt="arcoiris">
+    </div>
     <!-- <a href="" target="_blank">RED SOCIAL QUE ME DÉ LA GANA</a> -->
-  </nav>
-</footer>
-</body>
+   </nav>
+  </footer>
+ </body>
 </html>
