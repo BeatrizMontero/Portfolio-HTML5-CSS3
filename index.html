@@ -7,39 +7,31 @@
   <title>Prueba práctica</title>
 
   
-  <link rel="stylesheet" href="styles/reset.css"/>
+  <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css"/>
 </head>
 
-
-
 <body>
   <header>
-    <div>
-      <div class="topbar">
-   
-       <img src="imagenes/imagen2.jpg" alt="torbellino"/>
-       <img src="imagenes/imagen3.jpg" alt="arcoiris">
-
-      </div>
-
-      <!-- Todos los links tendrán que tener el estado hover suavizado con una transición. Estos links no son necesarios en la versión mobile como viene en los anexos. -->
-  <!-- ¿Qué son las transiciones? Enlace de interés > https://developer.mozilla.org/es/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions -->
-     
-      <nav class="navbar">
-       
-       <a href="#aboutme" class="nav-link" id="nav-link-aboutme">Dorothy Gale</a>
-       <a href="#qualities" class="nav-link" id="nav-link-qualities">Qualities</a>
-       <a href="#info" class="nav-link" id="nav-link-info">Datos personales</a>
-       
-      </nav>
-
+    <div class="topbar">
+       <img class="img3" src="imagenes/imagen3.jpg" alt="arcoiris">
+        <nav>
+          <div class="dropdown">
+           <button class="dropdown-button">Menu</button>
+           <div class="dropdown-menu">
+           <a href="#aboutme" class="nav-link" id="nav-link-aboutme">Dorothy Gale</a>
+           <a href="#qualities" class="nav-link" id="nav-link-qualities">Qualities</a>
+           <a href="#info" class="nav-link" id="nav-link-info">Datos personales</a>
+         </div>
+       </nav>
     </div>
+
+  
     
     <div class="container">
       
-      <img class="" src="imagenes/imagen1.jpg" alt="portada"/>
-      <div class="texto-encima">Sigue el camino de balsodas amarillas.</div>
+      <img class="img1" src="imagenes/imagen1.jpg" alt="portada"/>
+      <div class="texto">Sigue el camino de balsodas amarillas.</div>
     
     </div>
   

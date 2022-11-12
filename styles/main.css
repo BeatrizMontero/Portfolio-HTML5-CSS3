@@ -1,0 +1,175 @@
+
+body {
+    margin: 0 0 0 0;
+    background-color: rgb(242, 249, 186);
+    color: rgb(130, 124, 124);
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    margin: auto 0,25em;
+    position: relative;
+}
+
+main {
+    margin: auto 0.9em auto 0.9em;
+    position: relative;
+}
+
+footer {
+    background-color: rgb(172, 72, 132);
+    height:100%;
+    width:100%;
+    margin-top:3em;
+    position: relative;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+
+
+
+
+.topbar {
+    display: flex;
+    border-bottom: 1px solid rgb(209, 237, 25);
+    flex-wrap: wrap;
+    position: relative;   
+    padding: 1em 0.5em;
+   
+    
+    
+}
+
+.img3 {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+    height: 4em;
+}
+
+.dropdown{
+position: absolute;
+right: 25px;
+z-index: 100;
+}
+
+
+.dropdown-button {
+    width: 25vw;
+    padding: 1em 0 1em 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.7em;
+    color: rgb(14, 153, 212);
+}
+
+.dropdown-button:hover{
+    background-color: #a49cc22f;
+    transition: 0.7s;
+   
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu{
+    width: 25vw;
+    display: none;
+    position: absolute;
+    background-color: #6988c9;
+    box-shadow: 0px 8px 20px 0px rgba(28, 27, 28, 0.3);
+    border-radius: 0 0 7px 7px;
+}
+
+.dropdown-menu > a {
+    background-color: rgb(249, 24, 223);
+    border-radius: 4px;
+    margin: 0.3em;
+    padding: 0.3em 1em;
+    display: block;
+    text-align: center;
+    color: rgb(15, 82, 177);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.dropdown-menu > a:nth-child(1):hover {
+    background-color: rgb(91, 236, 80);
+    transition: 0.3s;
+
+}
+
+.dropdown-menu > a:nth-child(2):hover {
+    background-color: rgb(174, 236, 255);
+    transition: 0,7s;
+
+}
+
+.dropdown-menu > a:nth-child(3):hover {
+    background-color: rgb(217, 194, 255);
+    transition: 0.7s;
+}
+
+.container{
+   position: relative;
+   display: inline-block;
+   text-align: center;
+}
+
+.img1{
+    width: 20em;
+    height: auto;
+}
+
+.texto{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(246, 249, 150);
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#video{
+    
+    display: flex;
+    align-items: center;
+    width:100%;
+}
+
+
+.quality {
+    border: 1px solid rgb(128, 128, 128);
+    margin: 1em 0 1em 0;
+    border-radius: 8px;
+    height: 1em;
+}
+
+
+.skill {
+    border: 1px solid rgb(128, 128, 128);
+    margin: 1em 0 1em 0;
+    border-radius: 8px;
+    height: 1em;
+}
+
+.skill-progress {
+    height: 1em;
+    border-radius: 8px;
+    background-color: #d0a5e9;
+}
+
+#skill-html {
+    animation-name: htmlProgressBar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
