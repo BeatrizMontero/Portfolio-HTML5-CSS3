@@ -1,9 +1,9 @@
-
+/*reseteo styles*/
 body {
     margin: 0 0 0 0;
-    background-color: rgb(242, 249, 186);
+    background-color: #fefff8;
     color: rgb(130, 124, 124);
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
 header{
@@ -12,7 +12,7 @@ header{
 }
 
 main {
-    margin: auto 0.9em auto 0.9em;
+    margin: auto 2em auto 2em;
     position: relative;
 }
 
@@ -25,23 +25,22 @@ footer {
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
 
-
+/*zona superior*/
 
 .topbar {
     display: flex;
-    border-bottom: 1px solid rgb(209, 237, 25);
     flex-wrap: wrap;
     position: relative;   
-    padding: 1em 0.5em;
+    padding: 1em 1em;
    
     
     
@@ -51,9 +50,9 @@ h3 {
     display: flex;
     align-items: center;
     column-gap: 1em;
-    height: 4em;
+    height:4em;
 }
-
+/*menu hamburgesa*/
 .dropdown{
 position: absolute;
 right: 25px;
@@ -68,10 +67,11 @@ z-index: 100;
     border-radius: 4px;
     font-size: 0.7em;
     color: rgb(14, 153, 212);
+    background-color: rgb(193, 229, 244);
 }
 
 .dropdown-button:hover{
-    background-color: #a49cc22f;
+    background-color: #775bde2f;
     transition: 0.7s;
    
 }
@@ -137,6 +137,10 @@ z-index: 100;
     color:rgb(246, 249, 150);
     font-size: 2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px 2px rgb(15, 92, 225);
+}
+.sub{
+    font-family: fantasy;
 }
 
 #video{
@@ -146,30 +150,146 @@ z-index: 100;
     width:100%;
 }
 
+/*barras progreso animadas*/
 
-.quality {
-    border: 1px solid rgb(128, 128, 128);
-    margin: 1em 0 1em 0;
-    border-radius: 8px;
-    height: 1em;
+.bar{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(233, 236, 205);
+    color: rgb(88, 89, 86);
+    text-align: center;
+    font-weight: bold;
 }
 
-
-.skill {
-    border: 1px solid rgb(128, 128, 128);
-    margin: 1em 0 1em 0;
-    border-radius: 8px;
-    height: 1em;
+.progress{
+    height: 30px;
+    border-radius: 5px;
+    background-color: #5bd5f7;
 }
 
-.skill-progress {
-    height: 1em;
-    border-radius: 8px;
-    background-color: #d0a5e9;
+#cons{
+    animation-name: progress-bar-cons;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+} 
+
+@keyframes progress-bar-cons {
+    0% { width: 0; }
+    100% { width: 80%; }
 }
 
-#skill-html {
-    animation-name: htmlProgressBar;
-    animation-duration: 10s;
+#val{
+    animation-name: progress-bar-val;
+    animation-duration: 3.2s;
+    animation-iteration-count: infinite;  
+}
+
+@keyframes progress-bar-val {
+    0% { width: 0; }
+    100% { width: 65%; }
+}
+
+#aser{
+    animation-name: progress-bar-aser;
+    animation-duration: 3.3s;
     animation-iteration-count: infinite;
 }
+
+@keyframes progress-bar-aser {
+    0% { width: 0; }
+    100% { width: 70%; }
+}
+
+#emp{
+    animation-name: progress-bar-emp;
+    animation-duration: 3.4s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes progress-bar-emp {
+    0% { width: 0; }
+    100% { width: 90%; }
+}
+
+/*formulario*/
+
+.form{
+    margin-top: 3em;
+}
+
+.dp{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(193, 31, 172);
+}
+
+.cmc{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(244, 178, 112);
+}
+
+.gt{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(227, 61, 61);
+}
+
+.txt{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(172, 235, 147);
+}
+
+
+form input:not([type="radio"]){
+    border-radius: 10px;
+    border: 1px solid rgb(79, 81, 79);
+    padding: 0.5em;
+    margin: 1em auto 1em auto;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+
+textarea{
+    border-radius: 10px;
+    border: 1px solid rgb(197, 191, 191);
+    padding: 0.5em;
+    margin: 1em auto 1em auto;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+form input[type="submit"]:hover{
+    background-color: #eb8fc5;
+    transition: 0.3s;
+}
+
+form input[type="submit"]{
+    background-color: rgb(240, 230, 117);
+    border: 1px solid rgb(241, 242, 158);
+    
+}
+
+/*footer*/
+
+.navfoot{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 2em;
+    padding: 30px 25px;
+    background-color: rgb(142, 210, 227);
+}
+
+.foot1{
+     width: 7em;
+}
+.foot2{
+    width: 4em;
+}
+
+@media only screen and (min-width: 768px){}

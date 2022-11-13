@@ -20,7 +20,7 @@
            <button class="dropdown-button">Menu</button>
            <div class="dropdown-menu">
            <a href="#aboutme" class="nav-link" id="nav-link-aboutme">Dorothy Gale</a>
-           <a href="#qualities" class="nav-link" id="nav-link-qualities">Qualities</a>
+           <a href="#qualities" class="nav-link" id="nav-link-qualities">Cualidades</a>
            <a href="#info" class="nav-link" id="nav-link-info">Datos personales</a>
          </div>
        </nav>
@@ -61,38 +61,39 @@
       </article>  
     </section>
 
-    <section id="qualities" class="">
+    <div id="qualities">
+       <h3>Cualidades</h3>
+      
+       <div class="bar">
+        <div id="cons">
+          <div class="progress">Constancia</div>
+        </div>
+       </div>
 
-      <h3>Qualities</h3>
+       <div class="bar">
+         <div id="val">
+          <div class="progress">Valentía</div>
+        </div>
+       </div>   
+      
+       <div class="bar">
+         <div id="aser">
+          <div class="progress">Asertividad</div>
+        </div>
+       </div>   
 
-      <span>Constancia</span>
-      <div class="quality">
-          <div class="quality-progress" id="skill-constacia"></div>
-      </div>
+       <div class="bar">
+         <div id="emp">
+          <div class="progress">Empatía</div>
+        </div>
+       </div>   
 
-      <span>Valentía</span>
-      <div class="quality">
-          <div class="quality-progress" id="skill-valentia"></div>
-      </div>
-
-      <span>Asertividad</span>
-      <div class="quality">
-          <div class="quality-progress" id="skill-asertividad"></div>
-      </div>
-
-      <span>Empatía</span>
-      <div class="quality">
-          <div class="quality-progress" id="skill-empatia"></div>
-      </div>
-
-
-  </section>
-
-   <form id="info" class="" action="registro-completado" method="post" novalidate>
+  
+    <form id="info" class="form" action="registro-completado" method="post" novalidate>
     
     <fieldset>
 
-     <legend>Datos personales</legend>
+     <legend class="dp">Datos personales</legend>
 
        <label for="name">Nombre</label>
        <input required id="name" name="name" type="text" placeholder="Indica tu nombre">
@@ -107,7 +108,7 @@
 
     <fieldset>
 
-     <legend>¿Cómo me conociste?</legend>
+     <legend class="cmc">¿Cómo me conociste?</legend>
       
       <label for="unv">Universidad</label>
       <input required id="unv" type="radio" name="meet" value="unv">
@@ -126,14 +127,14 @@
      
     <fieldset>
 
-      <label for="gth">Indica tu tag de GitHub</label>
+      <label class="gt" for="gth">Indica tu tag de GitHub</label>
       <input required id="gth" type="text" name="gitHub" placeholder="@username" pattern="^@[^\s]+">
       
     </fieldset>
 
     <fieldset>
     
-      <label for="bio">Acerca de ti:</label> 
+      <label class="txt" for="bio">Acerca de ti:</label> 
       <textarea required id="bio" name="bio" maxlength="180" placeholder="Cuentame tus deseos (max 180 characters)" ></textarea> 
 
     </fieldset>
@@ -145,8 +146,8 @@
 
   <footer>
     <nav class="navfoot">
-     <a title="Twitter" href="https://github.com/BeatrizMontero" target="_blank"><img src="imagenes/imagen5.png" alt="GitHub" /></a>
-     <a title="Twitter" href="https://twitter.com/Beita83" target="_blank"><img src="imagenes/imagen4.png" alt="Twitter" /></a>
+     <a title="Twitter" href="https://github.com/BeatrizMontero" target="_blank"><img class="foot1" src="imagenes/imagen5.png" alt="GitHub" /></a>
+     <a title="Twitter" href="https://twitter.com/Beita83" target="_blank"><img class="foot2" src="imagenes/imagen4.png" alt="Twitter" /></a>
     </nav>
     
   </footer>
